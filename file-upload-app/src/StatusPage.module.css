@@ -1,0 +1,107 @@
+/* StatusPage.module.css */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5vw;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #01579b;
+  box-shadow: 1vw 1vw 0px 0px #01579b;
+  text-align: center;
+}
+
+.title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 6vw;
+  margin-bottom: 5vh;
+  color: #01579b;
+}
+
+.spinner {
+  margin: 5vh auto;
+  width: 20vw;
+  height: 20vw;
+  border: 2vw dashed #0288d1;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.statusText {
+  font-family: "Press Start 2P", cursive;
+  margin-top: 5vh;
+  font-size: 4vw;
+  color: #01579b;
+}
+
+.button {
+  background-color: #0288d1;
+  color: #fff;
+  border: none;
+  padding: 3vh 5vw;
+  font-size: 4vw;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 0.5vw 0.5vw 0px 0px #01579b;
+  margin-top: 5vh;
+}
+
+.button1 {
+  background-color: #59c600;
+  color: #fff;
+  border: none;
+  padding: 3vh 5vw;
+  font-size: 4vw;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 0.5vw 0.5vw 0px 0px #01579b;
+  margin-top: 5vh;
+}
+
+.button:hover {
+  background-color: #0277bd;
+}
+.button1:hover {
+  background-color: #0277bd;
+}
+
+/* Адаптивные стили для больших экранов */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+    box-shadow: 5px 5px 0px 0px #01579b;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border: 8px dashed #0288d1;
+  }
+
+  .statusText {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 15px 30px;
+    font-size: 18px;
+    box-shadow: 3px 3px 0px 0px #01579b;
+    margin-top: 30px;
+  }
+  .button1 {
+    padding: 15px 30px;
+    font-size: 18px;
+    box-shadow: 3px 3px 0px 0px #a7ff2d;
+    margin-top: 30px;
+  }
+}

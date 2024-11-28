@@ -1,0 +1,14 @@
+.corner-image {
+  position: absolute; /* Абсолютное позиционирование */
+  right: 10px; /* Отступ от правого края */
+  bottom: 10px; /* Отступ от нижнего края */
+  background-color: black; /* Чёрный фон */
+  padding: 5px; /* Немного внутреннего отступа */
+  border-radius: 8px; /* Скруглённые углы, если нужно */
+}
+
+.corner-image img {
+  max-width: 120px; /* Увеличиваем ширину на 20% (100px -> 120px) */
+  max-height: 120px; /* Увеличиваем высоту на 20% */
+  object-fit: contain; /* Сохраняем пропорции */
+}

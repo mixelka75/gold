@@ -1,0 +1,104 @@
+/* UploadPage.module.css */
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5vw;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid #01579b; /* Темно-синяя рамка */
+  box-shadow: 1vw 1vw 0px 0px #01579b;
+}
+
+.title {
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  font-size: 6vw;
+  margin-bottom: 5vh;
+  color: #01579b;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputWrapper input[type="file"] {
+  margin-bottom: 5vh;
+  font-size: 4vw;
+}
+
+.button {
+  background-color: #0288d1; /* Синий цвет */
+  color: #fff;
+  border: none;
+  padding: 3vh 5vw;
+  font-size: 4vw;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 0.5vw 0.5vw 0px 0px #01579b;
+}
+
+.button:hover {
+  background-color: #0277bd;
+}
+
+.progressBar {
+  width: 100%;
+  background-color: #b3e5fc;
+  border: 2px solid #01579b;
+  margin-top: 5vh;
+  position: relative;
+  height: 5vh;
+}
+
+.progressBar div {
+  height: 100%;
+  background-color: #4fc3f7; /* Голубой цвет */
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.progressText {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 1vh;
+  font-family: "Press Start 2P", cursive;
+  font-size: 3vw;
+  color: #01579b;
+}
+
+/* Адаптивные стили для больших экранов */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
+    box-shadow: 5px 5px 0px 0px #01579b;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .inputWrapper input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 15px 30px;
+    font-size: 18px;
+    box-shadow: 3px 3px 0px 0px #01579b;
+  }
+
+  .progressBar {
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  .progressText {
+    top: 5px;
+    font-size: 16px;
+  }
+}
